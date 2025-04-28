@@ -382,7 +382,7 @@ a {
 }
 
 
-@media screen and (max-width: 1070px) {
+@media screen and (max-width: 1070px) and (min-width: 1050px) {
 
   .main_second--cards {
     display: grid;
@@ -399,7 +399,7 @@ a {
   }
 }
 
-@media screen and (max-width: 1040px) {
+@media screen and (max-width: 1040px) and (min-width: 750px) {
   .main_first img {
     width: 100%;
   }
@@ -422,7 +422,7 @@ a {
   }
 }
 
-@media screen and (max-width: 740px) {
+@media screen and (max-width: 740px) and (min-width: 660px) {
   .main_first--left {
     display: none;
   }
@@ -447,7 +447,7 @@ a {
   }
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 650px) and (min-width: 540px) {
 
   .main_first--title {
     margin-bottom: 36px;
@@ -489,7 +489,7 @@ a {
 }
 
 
-@media screen and (max-width: 530px) {
+@media screen and (max-width: 530px) and (min-width: 440px) {
   .main_first--title {
     text-align: center;
     font-size: 26px;
@@ -548,7 +548,7 @@ a {
   }
 }
 
-@media screen and (max-width: 435px) {
+@media screen and (max-width: 435px) and (min-width: 340px) {
   .main_fourth--icon {
     display: none;
   }
