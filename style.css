@@ -161,7 +161,7 @@ a {
   }
 }
 
-@media screen and (max-width: 740px) and (min-width: 655px) {
+@media screen and (max-width: 749px) and (min-width: 655px) {
   body {
     background-image: url("img/tablet-header.png");
     background-size: contain;
@@ -424,7 +424,7 @@ a {
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1439px) {
-  .main_first--left--img {
+   .main_first--left--img {
     width: 452px;
   }
   .main_first--title {
@@ -441,12 +441,12 @@ a {
     padding-top: 50px;
   }
   .main_first--left--img {
-    width: 250px;
+    width: 300px;
   }
   .main_first--title {
     font-size: 30px;
     margin-bottom: 50px;
-  }
+  }  
   .main_first--btn {
     width: 350px;
     font-size: 26px;
@@ -496,7 +496,7 @@ a {
     padding-top: 30px;
   }
     .main_first--left--img {
-      width: 250px;
+      width: 300px;
     }
     .main_first--title {
       font-size: 20px;
@@ -552,11 +552,11 @@ a {
 }
 
 @media screen and (max-width: 595px) and (min-width: 494px) {
-  .main_first {
+   .main_first {
     padding-top: 30px;
   }
     .main_first--left--img {
-      width: 150px;
+      width: 200px;
     }
     .main_first--title {
       font-size: 20px;
@@ -611,9 +611,9 @@ a {
 }
 
 @media screen and (max-width: 495px) {
-  .main_first {
-    padding-bottom: 20px;
-  }
+      .main_first {
+        padding-bottom: 20px;
+      }
       .main_first--left--img {
         width: 150px;
       }
@@ -672,9 +672,9 @@ a {
 }
 
 @media screen and (max-width: 407px) {
-  body {
-    background-image: url(img/phone-header.png);
-  }
+       body {
+        background-image: url(img/phone-header.png);
+      }
       .main_first--left--img {
         width: 150px;
       }
@@ -806,6 +806,6 @@ a {
   }
 
   .footer_right--part--title .footer_right--part--links--item {
-    font-size: 22px;
+    font-size: 19px;
   }
 }
