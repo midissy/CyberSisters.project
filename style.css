@@ -1,5 +1,11 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
-  background-image: url("background-header.png");
+  background-image: url("img/background-header.png");
   background-size: auto;
   background-repeat: no-repeat;
 }
@@ -122,13 +128,29 @@ a {
   display: flex;
 }
 
-@media screen and (max-width: 1090px) {
+
+@media screen and (max-width: 1090px) and (min-width: 1080px) {
   .header_right--nav {
     gap: 34px;
   }
 }
 
-@media screen and (max-width: 1040px) {
+@media screen and (max-width: 1070px) and (min-width: 900px) {
+  body {
+    background-image: url("img/background-header.png");
+    background-size: auto;
+  }
+  .header_right--nav--link .header_right--nav--btn {
+    font-size: 19px;
+  }
+
+}
+
+@media screen and (max-width: 1040px) and (min-width: 750px) {
+  body {
+    background-image: url("img/tablet-header.png");
+    background-size: contain;
+  }
   .header_right {
     display: none;
   }
@@ -139,24 +161,37 @@ a {
   }
 }
 
-@media screen and (max-width: 740px) {
+@media screen and (max-width: 740px) and (min-width: 655px) {
+  body {
+    background-image: url("img/tablet-header.png");
+    background-size: contain;
+  }
   .header {
     margin-bottom: 100px;
   }
-}
-
-@media screen and (max-width: 1070px) {
-  body {
-    background-image: url("tablet-header.png");
-    background-size: contain;
+  .header_right {
+    display: none;
+  }
+  .header_right--mobile {
+    width: 50px;
+    display: block;
+    cursor: pointer;
   }
 }
 
 @media screen and (max-width: 650px) {
   body {
-    background-image: url("phone-header.png");
+    background-image: url("img/phone-header.png");
     background-repeat: no-repeat;
-    background-size: auto;
+    background-size: contain;
+  }
+  .header_right {
+    display: none;
+  }
+  .header_right--mobile {
+    width: 50px;
+    display: block;
+    cursor: pointer;
   }
 }
 
@@ -381,237 +416,324 @@ a {
   max-width: 150px;
 }
 
-
-@media screen and (max-width: 1070px) and (min-width: 1050px) {
-
+@media screen and (min-width: 1440px) {
   .main_second--cards {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
   }
+}
 
-  .main_fourth--title {
-    color: #a194b7;
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+  .main_first--left--img {
+    width: 452px;
   }
-
+  .main_first--title {
+    font-size: 34px;
+  }
   .main_first--btn {
-    width: 100%;
-    max-width: 450px;
-  }
-}
-
-@media screen and (max-width: 1040px) and (min-width: 750px) {
-  .main_first img {
-    width: 100%;
-  }
-  .main_second--title {
-    font-size: 36px;
-  }
-   .main_fourth--controllers {
-    padding: 20px;
-    width: 100%;
-    max-width: 550px;
-  }
-  .main_fourth--first--flower img {
-    max-width: 150px;
-  }
-  .main_fourth--second--flower img {
-    max-width: 150px;
-  }
-  .main_second--cards {
-    row-gap: 62px;
-  }
-}
-
-@media screen and (max-width: 740px) and (min-width: 660px) {
-  .main_first--left {
-    display: none;
-  }
-
-  .main_first--title {
-    margin-bottom: 36px;
-    font-size: 36px;
-    padding-left: 20px;
-  }
-
-  .main_second--cards--el--text {
-    max-width: 162px;
-  }
-  .main_fourth--first--flower img {
-    max-width: 50px;
-  }
-  .main_fourth--second--flower img {
-    max-width: 50px;
-  }
-  .main_first .main_container {
-    justify-content: center;
-  }
-}
-
-@media screen and (max-width: 650px) and (min-width: 540px) {
-
-  .main_first--title {
-    margin-bottom: 36px;
-    font-size: 32px;
-    padding-left: 20px;
-  }
-
-  .main_third--content {
-    padding: 100px;
-  }
-
-  .main_second--title {
-    font-size: 32px;
-  }
-
-  .main_fourth--title {
-    font-size: 29px;
-    color: #a194b7;
-  }
-
-  .main_fourth--content {
-    padding: 25px;
-  }
-
-  .main_fourth--content-text {
-    max-width: 280px;
-    font-size: 16px;
-  }
-
-  .main_fourth--controllers {
-    padding: 20px;
-    width: 100%;
-    max-width: 450px;
-  }
-
-  .main_fourth--controllers img {
-    width: 30px;
-  }
-}
-
-
-@media screen and (max-width: 530px) and (min-width: 440px) {
-  .main_first--title {
-    text-align: center;
+    width: 450px;
     font-size: 26px;
-    width: 100%;
   }
+}
 
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .main_first {
+    padding-top: 50px;
+  }
+  .main_first--left--img {
+    width: 300px;
+  }
+  .main_first--title {
+    font-size: 30px;
+    margin-bottom: 50px;
+  }
+  .main_first--btn {
+    width: 350px;
+    font-size: 26px;
+  }
+  .main_second--title {
+    font-size: 32px;
+  }
   .main-second--cards-images {
-    display: none;
+    width: 63px;
   }
-
-  .main_second--cards {
-    gap: 20px;
-    row-gap: 50px;
+  .main_third--content {
+    padding: 120px;
   }
-
-  .main-second--title {
-    font-weight: 22px;
+  .main_third--text {
+    font-size: 26px;
   }
+  .main_fourth--title {
+    font-size: 32px;
+  }
+   .main_fourth--content--title {
+    font-size: 20px;
+   }
+   .main_fourth--content-text {
+    font-size: 14px;
+    line-height: 1.5;
+   }
+   .main_fourth--icon img {
+    max-width: 65px;
+   }
+   .main_fourth--content {
+    padding: 27px 10px 27px 36px;
+  }
+  .main_fourth--controllers {
+    max-width: 530px;
+    padding: 20px;
+  }
+  .main_fourth--first--flower img {
+    max-width: 84px;
+  }
+  .main_fourth--second--flower img {
+    max-width: 84px;
+  }
+}
 
-  .main_second--cards--el {
-    border: 1px solid #222222;
-    border-radius: 180px;
+  @media screen and (max-width: 767px) and (min-width: 594px) {
+  .main_first {
+    padding-top: 30px;
+  }
+    .main_first--left--img {
+      width: 300px;
+    }
+    .main_first--title {
+      font-size: 20px;
+      margin-bottom: 50px;
+      max-width: 250px;
+    }
+    .main_first--btn {
+      width: 250px;
+      font-size: 20px;
+    }
+    .main_second--title {
+      font-size: 28px;
+    }
+    .main-second--cards-images {
+      width: 52px;
+    }
+    .main_second--cards--el--text {
+      font-size: 20px;
+    }
+    .main_third--content {
+      padding: 120px;
+    }
+    .main_third--text {
+      font-size: 24px;
+    }
+    .main_fourth--title {
+      font-size: 28px;
+    }
+    .main_fourth--content--title {
+      font-size: 20px;
+     }
+     .main_fourth--content-text {
+      font-size: 14px;
+      max-width: 250px;
+      line-height: 1.25;
+     }
+     .main_fourth--icon img {
+      max-width: 65px;
+     }
+     .main_fourth--content {
+      padding: 27px 10px 27px 36px;
+    }
+    .main_fourth--controllers {
+      max-width: 530px;
+      padding: 20px;
+    }
+    .main_fourth--first--flower img {
+      max-width: 75px;
+    }
+    .main_fourth--second--flower img {
+      max-width: 75px;
+  }
+}
+
+@media screen and (max-width: 595px) and (min-width: 494px) {
+  .main_first {
+    padding-top: 30px;
+  }
+    .main_first--left--img {
+      width: 200px;
+    }
+    .main_first--title {
+      font-size: 20px;
+      margin-bottom: 50px;
+      max-width: 300px;
+    }
+    .main_first--btn {
+      width: 230px;
+      height: 100px;
+      font-size: 20px;
+    }
+    .main_second--title {
+      font-size: 24px;
+    }
+    .main_second--cards {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .main-second--cards-images {
+      width: 52px;
+    }
+    .main_second--cards--el--text {
+      font-size: 16px;
+      max-width: 150px;
+    }
+    .main_fourth--content--title {
+      font-size: 18px;
+     }
+     .main_fourth--content-text {
+      font-size: 14px;
+      max-width: 250px;
+      line-height: 1.25;
+     }
+     .main_fourth--icon img {
+      max-width: 55px;
+     }
+     .main_fourth--title {
+      font-size: 24px;
+    }
+     .main_fourth--content {
+      padding: 27px 10px 27px 36px;
+    }
+    .main_fourth--controllers {
+      max-width: 360px;
+      padding: 15px;
+    }
+    .main_fourth--first--flower img {
+      max-width: 35px;
+    }
+    .main_fourth--second--flower img {
+      max-width: 35px;
+  }
+}
+
+@media screen and (max-width: 495px) {
+  .main_first {
     padding-bottom: 20px;
   }
-
-  .main_second--cards--el--text {
-    text-align: center;
-    font-size: 12px;
-  }
-
-  .main_first--btn {
-    width: 100%;
-    font-size: 22px;
-  }
-  .main_fourth--controllers {
-    padding: 20px;
-    width: 100%;
-    max-width: 350px;
-  }
-
-  .main_fourth--controllers img {
-    width: 30px;
-  }
-
-  .main_third--content {
-    width: 100%;
-    padding-left: 15px;
-  }
-
-  .main_third--text {
-    font-size: 24px;
-  }
-
-  .main_fourth--icon {
-    display: none;
-  }
+      .main_first--left--img {
+        width: 150px;
+      }
+      .main_first--title {
+        font-size: 18px;
+        margin-bottom: 50px;
+        max-width: 300px;
+      }
+      .main_first--btn {
+        width: 230px;
+        height: 70px;
+        font-size: 18px;
+      }
+      .main_second {
+        padding-top: 120px;
+      }
+      .main_second--title {
+        font-size: 22px;
+      }
+      .main_second--cards {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .main-second--cards-images {
+        width: 42px;
+      }
+      .main_second--cards--el--text {
+        font-size: 19px;
+      }
+      .main_fourth--title {
+        font-size: 24px;
+      }
+      .main_fourth--content--title {
+        font-size: 18px;
+       }
+       .main_fourth--content-text {
+        font-size: 14px;
+        max-width: 250px;
+        line-height: 1.25;
+       }
+       .main_fourth--icon img {
+        max-width: 55px;
+       }
+       .main_fourth--content {
+        padding: 27px 10px 27px 36px;
+      }
+      .main_fourth--controllers {
+        max-width: 360px;
+        padding: 15px;
+      }
+      .main_fourth--first--flower img {
+        display: none;
+      }
+      .main_fourth--second--flower img {
+       display: none;
+    }
 }
 
-@media screen and (max-width: 435px) and (min-width: 340px) {
-  .main_fourth--icon {
-    display: none;
+@media screen and (max-width: 407px) {
+  body {
+    background-image: url(img/phone-header.png);
   }
-  .main_fourth--first--flower img {
-    max-width: 30px;
-  }
-  .main_fourth--second--flower img {
-    max-width: 30px;
-  }
-  .main_second--cards {
-    gap: 20px;
-    row-gap: 50px;
-  }
-
-  .main_second--cards--el--text {
-    font-size: 12px;
-    max-width: 100px;
-  }
+      .main_first--left--img {
+        width: 150px;
+      }
+      .main_first--title {
+        font-size: 16px;
+        margin-bottom: 50px;
+        max-width: 150px;
+      }
+      .main_first--btn {
+        width: 130px;
+        height: 50px;
+        font-size: 16px;
+      }
+      .main_second--title {
+        font-size: 22px;
+      }
+      .main_second--cards {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .main-second--cards-images {
+        width: 32px;
+      }
+      .main_second--cards--el--text {
+        font-size: 14px;
+        max-width: 100px;
+      }
+      .main_third--text {
+        font-size: 19px;
+      }
+      .main_fourth--title {
+        font-size: 22px;
+      }
+      .main_fourth--content--title {
+        font-size: 16px;
+       }
+       .main_fourth--content-text {
+        font-size: 12px;
+        max-width: 200px;
+        line-height: 1.25;
+       }
+       .main_fourth--icon img {
+        max-width: 55px;
+       }
+       .main_fourth--content {
+        padding: 17px 10px 17px 26px;
+      }
+      .main_fourth--controllers {
+        max-width: 260px;
+        padding: 15px;
+      }
+      .main_fourth--first--flower img {
+        display: none;
+      }
+      .main_fourth--second--flower img {
+       display: none;
+    }
 }
 
-@media screen and (max-width: 336px) {
-  .main_second {
-    padding-top: 200px;
-    padding-bottom: 100px;
-  }
-  .main_second--title {
-    font-size: 19px;
-  }
-  .main_second--cards--el--text {
-    text-align: center;
-    font-size: 10px;
-    max-width: 100px;
-  }
 
-  .main_fourth--controllers {
-    padding: 20px;
-    width: 100%;
-    max-width: 300px;
-  }
-
-  .main_fourth--content--title {
-    font-size: 16px;
-  }
-
-  .main_third {
-    margin-bottom: 106px;
-  }
-
-  .main_fourth--title {
-    font-size: 22px;
-    max-width: 150px;
-    color: #a194b7;
-  }
-
-  .main_fourth--content-text {
-    max-width: 280px;
-    font-size: 12px;
-  }
-
-  .main_fourth--content {
-    padding: 47px 30px 37px 15px;
-  }
-}
 
 .footer {
   padding-top: 130px;
