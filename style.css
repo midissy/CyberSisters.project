@@ -1,11 +1,12 @@
 * {
   box-sizing: border-box;
+  max-width: 100%;
   margin: 0;
   padding: 0;
 }
 
 body {
-  background-image: url("background-header.png");
+  background-image: url("img/background-header.png");
   background-size: auto;
   background-repeat: no-repeat;
 }
@@ -137,7 +138,7 @@ a {
 
 @media screen and (max-width: 1070px) and (min-width: 900px) {
   body {
-    background-image: url("background-header.png");
+    background-image: url("img/background-header.png");
     background-size: auto;
   }
   .header_right--nav--link .header_right--nav--btn {
@@ -146,9 +147,9 @@ a {
 
 }
 
-@media screen and (max-width: 1040px) and (min-width: 750px) {
+@media screen and (max-width: 1069px) and (min-width: 750px) {
   body {
-    background-image: url("tablet-header.png");
+    background-image: url("img/tablet-header.png");
     background-size: contain;
   }
   .header_right {
@@ -161,9 +162,9 @@ a {
   }
 }
 
-@media screen and (max-width: 749px) and (min-width: 655px) {
+@media screen and (max-width: 749px) and (min-width: 650px) {
   body {
-    background-image: url("tablet-header.png");
+    background-image: url("img/tablet-header.png");
     background-size: contain;
   }
   .header {
@@ -179,9 +180,9 @@ a {
   }
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 649px) {
   body {
-    background-image: url("phone-header.png");
+    background-image: url("img/phone-header.png");
     background-repeat: no-repeat;
     background-size: contain;
   }
@@ -204,7 +205,6 @@ a {
 
 .main_first .main_container {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
 }
@@ -264,7 +264,7 @@ a {
 }
 
 .main_second--title {
-  font-family: ʼMontserratʼ, ʼsans-serifʼ;
+  font-family: Montserrat;
   font-weight: 400;
   font-size: 42px;
   line-height: 100%;
@@ -425,7 +425,7 @@ a {
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1439px) {
-   .main_first--left--img {
+  .main_first--left--img {
     width: 452px;
   }
   .main_first--title {
@@ -438,7 +438,7 @@ a {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-  .main_first {
+.main_first {
     padding-top: 50px;
   }
   .main_first--left--img {
@@ -518,7 +518,7 @@ a {
       font-size: 20px;
     }
     .main_third--content {
-      padding: 120px;
+      padding: 100px;
     }
     .main_third--text {
       font-size: 24px;
@@ -553,7 +553,7 @@ a {
 }
 
 @media screen and (max-width: 595px) and (min-width: 494px) {
-   .main_first {
+  .main_first {
     padding-top: 30px;
   }
     .main_first--left--img {
@@ -581,6 +581,12 @@ a {
     .main_second--cards--el--text {
       font-size: 16px;
       max-width: 150px;
+    }
+    .main_third--content {
+      padding: 95px;
+    }
+    .main_third--text {
+      font-size: 22px;
     }
     .main_fourth--content--title {
       font-size: 18px;
@@ -612,9 +618,9 @@ a {
 }
 
 @media screen and (max-width: 495px) {
-      .main_first {
-        padding-bottom: 20px;
-      }
+  .main_first {
+    padding-bottom: 20px;
+  }
       .main_first--left--img {
         width: 150px;
       }
@@ -642,6 +648,12 @@ a {
       }
       .main_second--cards--el--text {
         font-size: 19px;
+      }
+      .main_third--content {
+        padding: 100px;
+      }
+      .main_third--text {
+        font-size: 20px;
       }
       .main_fourth--title {
         font-size: 24px;
@@ -673,9 +685,9 @@ a {
 }
 
 @media screen and (max-width: 407px) {
-       body {
-        background-image: url("phone-header.png");
-      }
+  body {
+    background-image: url(img/phone-header.png);
+  }
       .main_first--left--img {
         width: 150px;
       }
@@ -702,8 +714,11 @@ a {
         font-size: 14px;
         max-width: 100px;
       }
+      .main_third--content {
+        padding: 70px;
+      }
       .main_third--text {
-        font-size: 19px;
+        font-size: 16px;
       }
       .main_fourth--title {
         font-size: 22px;
@@ -807,6 +822,6 @@ a {
   }
 
   .footer_right--part--title .footer_right--part--links--item {
-    font-size: 19px;
+    font-size: 16px;
   }
 }
