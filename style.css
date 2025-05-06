@@ -181,7 +181,7 @@ a {
 
 @media screen and (max-width: 650px) {
   body {
-    background-image: url(phone-header.png");
+    background-image: url("phone-header.png");
     background-repeat: no-repeat;
     background-size: contain;
   }
@@ -204,6 +204,7 @@ a {
 
 .main_first .main_container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
 }
@@ -263,7 +264,7 @@ a {
 }
 
 .main_second--title {
-  font-family: Montserrat;
+  font-family: ʼMontserratʼ, ʼsans-serifʼ;
   font-weight: 400;
   font-size: 42px;
   line-height: 100%;
