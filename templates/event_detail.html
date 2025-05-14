@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ event.title }}</title>
+</head>
+<body>
+    <h1>{{ event.title }}</h1>
+    <p><strong>Date:</strong> {{ event.start_date }}</p>
+    <p><strong>Duration:</strong> {{ event.duration_minutes }} minutes</p>
+    <p><strong>Type:</strong> {{ event.event_type }}</p>
+    <p><strong>Location / Link:</strong> {{ event.location_or_link }}</p>
+    <p><strong>Participants:</strong> {{ event.participants }}</p>
+    <p><strong>Content:</strong> {{ event.content }}</p>
+
+   <a href="{{ url_for('index') }}">Back to all events</a>
+</body>
+</html>

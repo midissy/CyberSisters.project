@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Events</title>
+</head>
+<body>
+    <h1>All Events</h1>
+    <label>
+        <input type="checkbox" onchange="toggleCompact(this.checked)"> Compact View
+    </label>
+    <ul id="results" style="line-height: 1.6;"></ul>
+
+<script>
+    window.onload = function () {
+        fetch("/events")
+            .then(response => response.json())
+            .then(data => displayResults(data))
+            .catch(error => console.error("Error:", error));
+    };
+
+    function displayResults(data) {
+        const resultsList = document.getElementById("results");
+        resultsList.innerHTML = "";
+        data.forEach(row => {
+            const li = document.createElement("li");
+            li.innerHTML = `
+                <strong>Title:</strong> ${row.title}<br>
+                <strong>Type:</strong> ${row.event_type}<br>
+                <strong>Start:</strong> ${row.start_date}<br><br>
+            `;
+            resultsList.appendChild(li);
+        });
+    }
+    function displayResults(data) {
+        const resultsList = document.getElementById("results");
+        resultsList.innerHTML = "";
+        data.forEach(row => {
+            const li = document.createElement("li");
+            li.innerHTML = `
+                <strong>
+                    <a href="/event/${row.id}" style="color: blue; text-decoration: underline;">
+                        ${row.title}
+                    </a>
+                </strong><br>
+                <strong>Type:</strong> ${row.event_type}<br>
+                <strong>Start:</strong> ${row.start_date}<br><br>
+            `;
+            resultsList.appendChild(li);
+        });
+    }
+</script>
+</body>
+</html>
