@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
 }
+
 .logo-login--form {
     display: flex;
     align-items: center;
@@ -99,4 +100,262 @@
 
 .login-btn--form::after {
     border: 2px solid #F8F4FF;
+}
+
+
+@media screen and (min-width: 1440px) {
+    .container-form {
+        max-width: 1159px;
+        position: relative;
+        background-color: #faf7ff;
+        left: 236px;
+    }
+    .logo-login--form {
+        padding-left: 236px;
+    }
+}
+
+@media screen and (min-width: 1370px) and (max-width: 1439px) {
+    .container-form {
+        max-width: 1009px;
+        position: relative;
+        background-color: #faf7ff;
+        left: 236px;
+    }
+
+    .login-input--form {
+        width: 260px;
+    }
+
+    .logo-login--form {
+        padding-left: 327px;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1369px) {
+    .container-form {
+        max-width: 990px;
+        position: relative;
+        background-color: #faf7ff;
+        left: 176px;
+    }
+
+    .logo-login--form {
+        padding-left: 120px;
+    }
+
+    .login-input--form {
+        width: 260px;
+    }
+}
+
+@media screen and (min-width: 980px) and (max-width: 1200px) {
+    .container-form {
+        max-width: 790px;
+        position: relative;
+        background-color: #faf7ff;
+        left: 176px;
+    }
+
+    .container-heading--form {
+        font-size: 22px;
+    }
+
+    .login-label--form {
+        font-size: 18px;
+    }
+
+    .login-btn--form {
+        font-size: 19px;
+    }
+
+    .login-input--form {
+        width: 260px;
+    }
+
+    .logo-login--form {
+        padding-left: 190px;
+    }
+}
+
+@media screen and (min-width: 760px) and (max-width: 979px) {
+    .container-form {
+        max-width: 730px;
+        position: relative;
+        background-color: #faf7ff;
+        left: 100px;
+    }
+
+    .logo-login--form {
+        padding-left: 96px;
+    }
+
+    .container-heading--form {
+        font-size: 20px;
+    }
+
+    .login-label--form {
+        font-size: 18px;
+    }
+
+    .login-btn--form {
+        font-size: 19px;
+    }
+
+    .login-input--form {
+        width: 260px;
+    }
+}
+
+@media screen and (min-width: 750px) and (max-width: 800px) {
+    .container-form {
+        max-width: 600px;
+        position: relative;
+        background-color: #faf7ff;
+        left: 120px;
+        gap: 20px;
+    }
+
+    .container-heading--form {
+        font-size: 20px;
+    }
+
+    .login-label--form {
+        font-size: 16px;
+    }
+
+    .login-btn--form {
+        font-size: 18px;
+        width: 220px;
+    }
+
+    .login-input--form {
+        width: 230px;
+    }
+}
+
+@media screen and (min-width: 660px) and (max-width: 799px) {
+    .container-form {
+        max-width: 560px;
+        position: relative;
+        background-color: #faf7ff;
+        left: 50px;
+    }
+
+    .container-heading--form {
+        font-size: 19px;
+    }
+.logo-login--form {
+    padding-left: 54px;
+}
+    .login-label--form {
+        font-size: 16px;
+    }
+
+    .login-btn--form {
+        font-size: 19px;
+        width: 206px;
+    }
+
+    .login-input--form {
+        width: 200px;
+    }
+}
+
+
+@media screen and (min-width: 550px) and (max-width: 659px) {
+
+    .logo-login--form {
+        padding-left: 120px;
+        width: 220px;
+    }
+
+    .container-form {
+        max-width: 500px;
+        position: relative;
+        background-color: #faf7ff;
+        left: 35px;
+    }
+
+    .container-heading--form {
+        font-size: 19px;
+    }
+
+    .login-label--form {
+        font-size: 16px;
+    }
+
+    .login-btn--form {
+        font-size: 16px;
+        width: 180px;
+    }
+
+    .login-input--form {
+        width: 180px;
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width: 549px) {
+    .container-form {
+        max-width: 450px;
+        position: relative;
+        background-color: #faf7ff;
+        left: 35px;
+    }
+
+    .container-heading--form {
+        font-size: 19px;
+    }
+
+    .login-label--form {
+        font-size: 15px;
+    }
+
+    .login-btn--form {
+        font-size: 15px;
+        width: 150px;
+    }
+
+    .logo-login--form {
+        padding-left: 37px;
+    }
+    .login-input--form {
+        width: 135px;
+    }
+}
+
+@media screen and (max-width: 499px) {
+     .logo-login--form {
+        padding-left: 38px;
+        width: 150px;
+    }
+
+    .container-form {
+        max-width: 350px;
+        position: relative;
+        background-color: #faf7ff;
+        left: 35px;
+    }
+
+    .login-form--items1 {
+        padding-left: 10px;
+    }
+
+    .container-heading--form {
+        font-size: 19px;
+    }
+
+    .login-label--form {
+        font-size: 15px;
+    }
+
+    .login-btn--form {
+        font-size: 15px;
+        width: 150px;
+    }
+
+    .login-input--form {
+        width: 135px;
+
+    }
 }
