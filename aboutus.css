@@ -1,5 +1,5 @@
 body {
-  background-image: url("img/background-header.png");
+  background-image: url("background-header.png");
   background-repeat: no-repeat;
   height: auto;
 }
@@ -125,7 +125,7 @@ a {
 
 @media screen and (max-width: 1070px) {
   body {
-    background-image: url("img/tablet-header.png");
+    background-image: url("tablet-header.png");
   }
 }
 
