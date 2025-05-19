@@ -6,7 +6,7 @@
 }
 
 body {
-  background-image: url("img/background-header.png");
+  background-image: url("background-header.png");
   background-size: auto;
   background-repeat: no-repeat;
 }
@@ -138,7 +138,7 @@ a {
 
 @media screen and (max-width: 1070px) and (min-width: 900px) {
   body {
-    background-image: url("img/background-header.png");
+    background-image: url("background-header.png");
     background-size: auto;
   }
   .header_right--nav--link .header_right--nav--btn {
@@ -149,7 +149,7 @@ a {
 
 @media screen and (max-width: 1069px) and (min-width: 750px) {
   body {
-    background-image: url("img/tablet-header.png");
+    background-image: url("tablet-header.png");
     background-size: contain;
   }
   .header_right {
@@ -164,7 +164,7 @@ a {
 
 @media screen and (max-width: 749px) and (min-width: 650px) {
   body {
-    background-image: url("img/tablet-header.png");
+    background-image: url("tablet-header.png");
     background-size: contain;
   }
   .header {
@@ -182,7 +182,7 @@ a {
 
 @media screen and (max-width: 649px) {
   body {
-    background-image: url("img/phone-header.png");
+    background-image: url("phone-header.png");
     background-repeat: no-repeat;
     background-size: contain;
   }
